@@ -47,8 +47,8 @@
           </h6>
           * Corresponding Author: Sanaullah
           <p>
-			<sup>1</sup>Industrial Internet of Things, Hochschule Bielefeld, Germany &nbsp;&nbsp;
-            <sup>2</sup>CVR-Lab, University of Granada, Spain &nbsp;&nbsp;
+			<sup>1</sup>Industrial Internet of Things, Hochschule Bielefeld, Germany &nbsp;&nbsp; <br>
+            <sup>2</sup>CVR-Lab, University of Granada, Spain &nbsp;&nbsp; <br>
 			<sup>3</sup>Cognitronics & Sensor Systems, Universität Bielefeld, Germany
             <br>
 
@@ -57,16 +57,14 @@
               <p class="mb-5"><a class="btn btn-large btn-light"
                   href="#"
                   role="button" target="_blank">
-                  <i class="fa fa-file"></i> Paper (under-review)</a> </p>
+                  <i class="fa fa-file"></i> External Lab Collaboration</a> </p>
             </div>
-
-            <div class="column">
+            <!--<div class="column">
               <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/Rao-Sanaullah/neurocomputing_application_code"
                   role="button" target="_blank">
-                  <i class="fa fa-github-alt"></i> Code</a> </p>
+                  <i class="fa fa-github-alt"></i> Code</a> </p> -->
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -81,7 +79,7 @@
 			<div class="col-md-12 wthree_services_grid_left">
                  <p style="text-align: justify;" style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
 		As part of an external lab collaboration (Dataninja project) with Prof. Francisco Barranco and Prof. Eduardo Ros at the Computer Vision and Robotics (CVR) Lab, 
-		I worked on an event-based activity recognition dataset developed by the host lab. Our research focuses on Spiking Neural Network (SNN) exploration, where data must be represented as spike trains for effective network processing. 
+		I worked on an event-based activity recognition dataset developed by the host lab [1, 2]. Our research focuses on Spiking Neural Network (SNN) exploration, where data must be represented as spike trains for effective network processing. 
 		To address this issue, I designed and implemented an algorithm that converts the original event-based dataset into spike train format, tailored for SNN applications. In addition to data conversion, 
 		I worked on a framework for visualizing and comparing both the original event-based dataset and the generated spike train dataset. This framework allows for the event and spike reconstruction into frame-based visualizations, 
 		producing event-based videos from real and spike-based videos from generated datasets. This visualization is essential for validating the fidelity of the spike train dataset by comparing it to the original data. 
@@ -263,7 +261,7 @@
 							The raw event data from these event-based sensors are inherently sparse and asynchronous, which makes it difficult to directly interpret or utilize for standard image-based applications.
 							Therefore, the primary goal of reconstructing events into frame-based visualizations is to transform the sparse, asynchronous event data into a structured format that can be easily analyzed and visualized.
 							Secondly, the motivation behind visualizing the generated spike train dataset and comparing the visual differences between real (event-based) and generated (spike train) datasets.
-							For this reconstruction of events into a frame-based visualization framework, we used a trained neural network model, which is used for the reconstruction [1].
+							For this reconstruction of events into a frame-based visualization framework, we used a trained neural network model, which is used for the reconstruction [3].
 						</p>
 					</div>
 				</section>
@@ -305,23 +303,6 @@
 <div class="container">
     <div class="row ">
       <div class="col-12">
-          <h3>Dataset Availability</h3>
-          <hr style="margin-top:0px">
-          <p class="text-justify" style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
-		  
-			Event-Based Dataset (Original): <a href="https://github.com/DaniDeniz/DavisHandDataset-Events" target="_blank">Download Link</a> <br>
-			<p>Description: This dataset contains raw data captured by event-based cameras, providing high temporal resolution and asynchronous event streams. Suitable for initial experiments and raw data analysis.</p>
-			
-			Spike Train Dataset (Transformed): <a href="https://drive.google.com/file/d/1HSaJXqOdEdPiyT1OBn-XNn-RyHmnFD6y/view?usp=drive_link" target="_blank">Download Link</a> <br>
-			<p>Description: This dataset features the same information transformed into spike train format, optimized for use with SNNs. This format aligns with the time-based processing needs of SNNs and facilitates efficient learning and analysis.</p>
-          </p>
-      </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row ">
-      <div class="col-12">
           <h3>Upcoming Features</h3>
           <hr style="margin-top:0px">
           <p class="text-justify" style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
@@ -336,7 +317,43 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Dataset Availability</h3>
+          <hr style="margin-top:0px">
+          <p class="text-justify" style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+		  
+			Event-Based Dataset (Original): <a href="https://github.com/DaniDeniz/DavisHandDataset-Events" target="_blank">Download Link</a> <br>
+			<p>Description: This dataset contains raw data captured by event-based cameras, providing high temporal resolution and asynchronous event streams. Suitable for initial experiments and raw data analysis.</p>
+			
+			Spike Train Dataset (Transformed): <a href="https://drive.google.com/file/d/1HSaJXqOdEdPiyT1OBn-XNn-RyHmnFD6y/view?usp=drive_link" target="_blank">Download Link</a> <br>
+			<p>Description: This dataset features the same information transformed into spike train format, optimized for use with SNNs. This format aligns with the time-based processing needs of SNNs and facilitates efficient learning and analysis.</p>
+          </p>
+      </div>
+    </div>
+</div>
 
+
+
+
+
+<div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>References</h3>
+          <hr style="margin-top:0px; font-size: 0.1em; color: #808080;">
+			<p class="references">
+				[1]. D. Deniz, C. Fermuller, E. Ros, M. Rodriguez-Alvarez, & F. Barranco. (2023) "Event-based Vision for Early Prediction of Manipulation Actions". <a href="https://arxiv.org/abs/2307.14332" target="_blank">arXiv preprint arXiv:2307.14332</a>.<br>
+				[2]. D. Deniz, E. Ros, C. Fermuller, & F. Barranco. (2023). "When Do Neuromorphic Sensors Outperform Cameras? Learning from Dynamic Features". In <i>2023 57th Annual Conference on Information Sciences and Systems (CISS)</i> (pp. 1-6). IEEE. <br>
+				[3]. Rebecq, Henri, et al. (2019). "High speed and high dynamic range video with an event camera." <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i> 43.6: 1964-1980. <br>
+			</p>
+      </div>
+    </div>
+</div>
+
+  
+  
 <!-- citing -->
 <div class="container">
 	<div class="row ">
@@ -347,31 +364,7 @@
 			<h3>Citation</h3>
 			<hr style="margin-top:0px">
 			<pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
-				<code>@article{sanaullah2023exploring,
-				  title={Exploring spiking neural networks: a comprehensive analysis of mathematical models and applications},
-				  author={Sanaullah and Koravuna, Shamini and R{\"u}ckert, Ulrich and Jungeblut, Thorsten and others},
-				  journal={Frontiers in Computational Neuroscience},
-				  volume={17},
-				  year={2023},
-				  publisher={Frontiers Media SA}}
-				</code>
-			</pre>
-			<pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
-				<code>@article{sanaullah2023evaluation,
-				  title={Evaluation of Spiking Neural Nets-Based Image Classification Using the Runtime Simulator RAVSim.},
-				  author={Sanaullah and Koravuna, Shamini and R{\"u}ckert, Ulrich and Jungeblut, Thorsten and others},
-				  journal={International Journal of Neural Systems},
-				  pages={2350044--2350044},}
-				</code>
-			</pre>
-			<pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
-				<code>@inproceedings{sanaullah2022snns,
-				  title={SNNs model analyzing and visualizing experimentation using RAVSim},
-				  author={Sanaullah and Koravuna, Shamini and R{\"u}ckert, Ulrich and Jungeblut, Thorsten},
-				  booktitle={International conference on engineering applications of neural networks},
-				  pages={40--51},
-				  year={2022},
-				  organization={Springer}}
+				<code>
 				</code>
 			</pre>
 		</div>
