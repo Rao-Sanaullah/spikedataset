@@ -99,95 +99,59 @@
 				<div class="clearfix"> </div>
 				<br><br>
 				<div class="col-md-12 wthree_services_grid_left">
-					<h3 class="w3l_header w3_agileits_header">What is <span>RAVSim</span> Offering</h3>
+					<h3 class="w3l_header w3_agileits_header">Event Dataset with <span>Spiking Neural Network</span></h3>
 					<p style="text-align: justify;"> 
-						RAVSim offers both deterministic (by solving Ordinary Differential Equations (ODEs) and stochastic (using stochastic leaky integrate-and-fire (LIF) neurons 
-						algorithm) simulations. This dual simulation capability enables users to gain a comprehensive understanding of spiking neural network dynamics through various 
-						approaches. What sets RAVSim apart from other tools is its unique ability to execute, analyze, extract, and validate models using image-based datasets. 
-						This empowers users not only to analyze and simulate spiking neural networks but also to create custom datasets tailored to their specific image pixel, quality, 
-						and extension preferences.
+						Event-based vision and SNNs are emerging as transformative technologies for neuromorphic computing, which offers efficient and biologically inspired methods for processing dynamic and real-time data. 
+						Traditional frame-based methods struggle to match the temporal resolution and low-latency response offered by event-based sensors, such as Dynamic Vision Sensors (DVS) or DAVIS cameras, 
+						which capture changes in the scene at the pixel level. These sensors output asynchronous events rather than static frames, which opens new possibilities for high-speed and low-power applications. 
+						However, the use of these event-based datasets in SNNs requires specific data formats, namely spike trains, that mirror the spike-based communication found in biological neural networks.
 					</p>
-
-					<p style="text-align: justify;"> 
-						<div class="col-md-5 wthree_services_grid_left">
-							<h3>A Run-time <span>VI</span> </h3>
-							<p style="text-align: justify;"> 
-								A run-time VI offers three different WTA Networks, List of conditions: <br>
-								1- Fully connected network <br>
-								2- source != target index neurons <br>
-								3- source == target index neurons <br>
-								Also, a mixed signal plot for a better understanding of neuron communication.
-							</p>
-						</div>
-						
-						<div class="col-md-2 wthree_services_grid_right">
-							<div class="columns is-centered">
-								<img style="width: 100%;" src="videos/event_event.gif">
+					<br>
+					<br>
+					<div class="container">
+						<div class="row">
+							<!-- Text on the right -->
+							<div class="col-md-9 wthree_services_grid_left">
+								<h3>A Event <span>Dataset</span></h3>
+								<p style="text-align: justify;">
+									Event-based cameras capture dynamic changes in a scene by recording pixel-level events triggered by motion, rather than traditional frame-based methods: <br>
+									1- Timestamp: High-precision time information for each event. <br>
+									2- Pixel Coordinates (x, y): Specifies the exact location of the pixel where the event occurred. <br>
+									3- Polarity (ON/OFF): Indicates whether the pixel brightness increased or decreased. <br>
+									4- Event Intensity: Represents the magnitude of brightness change for some event cameras. <br>
+								</p>
+							</div>
+							<!-- GIF on the left -->
+							<div class="col-md-3 wthree_services_grid_right">
+								<br>
+								<img style="width: 80%;" src="videos/event_event.gif" alt="Event GIF">
 							</div>
 						</div>
-						<br>					
-					</p>
-
-					<p style="text-align: justify;"> 
-						<div class="col-md-7 wthree_services_grid_left">
-							<br>
-							<h3>Dataset Preprocessing <span>VI</span> </h3>
-							<p style="text-align: justify;"> 	 
-								Within dataset preprocess VI, users are allowed to use downloaded images for creating a scalable dataset. 
-								This flexibility includes the ability to use images with varying extensions, sizes, and qualities, pixel to the user's specific requirements. 
-								The tool supports a wide variety of image formats, accommodating datasets that suit diverse research and application needs.
-							</p>							
-						</div>
-						<br>
-						<div class="col-md-5 wthree_services_grid_right">
-							<br>
-							<div class="columns is-centered">
-								<img style="width: 100%;" src="images/4.jpg">
+					</div>
+					<br>
+					<br>
+					<div class="container">
+						<div class="row">
+							<!-- Text on the right -->
+							<div class="col-md-9 wthree_services_grid_left">
+								<h3>A Spike Train <span>Dataset</span></h3>
+								<p style="text-align: justify;">
+									Converting event-based datasets to spike trains is essential for SNNs. 
+									Spike trains align with SNNs time-based processing, while event-based data, being asynchronous, is difficult for spiking models to handle efficiently. <br>
+									Why conversion is important: <br>
+									1- Better compatibility: Spike trains match the temporal dynamics of spiking neurons. <br>
+									2- Improved processing: Event-based data streams are challenging for spiking models. <br>
+									3- Efficient learning: Spike trains enable time-dependent training and inference. <br>
+									4- Optimized performance: SNNs work more effectively with spatiotemporal data patterns. <br>
+								</p>
+							</div>
+							<!-- GIF on the left -->
+							<div class="col-md-3 wthree_services_grid_right">
+								<br>
+								<img style="width: 95%;" src="videos/spike_event.gif" alt="Event GIF">
 							</div>
 						</div>
-						<br>
-					</p>
-
-					<p style="text-align: justify;"> 
-						<div class="col-md-7 wthree_services_grid_left">
-							<br>
-							<h3>Image Classification <span>VI</span> </h3>
-							<p style="text-align: justify;"> 		
-								RAVSim has recently introduced new features to enhance the user experience. It now offers a convenient option to generate 
-								weights for your spiking neural network models using image classification training. This feature eliminates the need for complex coding; you can simply utilize 
-								RAVSim to train your model and generate the required weights effortlessly.
-							</p>	
-						</div>
-						<br>
-						<div class="col-md-5 wthree_services_grid_right">
-							<br>
-							<div class="columns is-centered">
-								<img style="width: 100%;" src="images/2.png">
-							</div>
-						</div>
-						<br>
-					</p>
-				
-					<p style="text-align: justify;"> 
-						<div class="col-md-7 wthree_services_grid_left">
-							<br>
-							<h3>SNN Models Comparison <span>VI</span> </h3>
-							<p style="text-align: justify;"> 	
-								In addition to weight generation, RAVSim facilitates the comparison of different spiking neural network models. Users can dynamically update sets of parameter 
-								values for each model at runtime and obtain comparative results. This functionality aids in identifying the most suitable model for your specific spiking neural 
-								network application.
-							</p>
-						</div>
-						<br>
-						<div class="col-md-5 wthree_services_grid_right">
-							<br>
-							<br>
-							<div class="columns is-centered">
-								<img style="width: 100%;" src="images/3.png">
-							</div>
-						</div>
-						<br>
-					</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -196,21 +160,7 @@
 
 
 
-    <!-- row-2 option-2 (mesh & fg rendering) -->
-    <div class="d-flex justify-content-center align-items-end">
-        <!-- mesh -->
-        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img src="images/frame1.png" alt="input" class="img-fluid">
-        </div>
-        <!-- rendering (video) -->
-        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <div class="embed-responsive embed-responsive-16by9">
 
-			<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-              <img src="videos/event_event.gif" >
-            </p>
-		
-			
 
 
 
