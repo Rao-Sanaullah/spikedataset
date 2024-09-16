@@ -24,6 +24,8 @@
       font-family: 'Open Sans', sans-serif;
     }
   </style>
+  
+  
 
 </head>
 <!-- cover -->
@@ -77,7 +79,7 @@
 	    <section class="hand-crafted">
 			<h3 class="w3l_header w3_agileits_header"><span>Abstract</span></h3>
 			<div class="col-md-12 wthree_services_grid_left">
-                 <p style="text-align: justify;">
+                 <p style="text-align: justify;" style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
 		As part of an external lab collaboration (Dataninja project) with Prof. Francisco Barranco and Prof. Eduardo Ros at the Computer Vision and Robotics (CVR) Lab, 
 		I worked on an event-based activity recognition dataset developed by the host lab. Our research focuses on Spiking Neural Network (SNN) exploration, where data must be represented as spike trains for effective network processing. 
 		To address this issue, I designed and implemented an algorithm that converts the original event-based dataset into spike train format, tailored for SNN applications. In addition to data conversion, 
@@ -100,7 +102,7 @@
 				<br><br>
 				<div class="col-md-12 wthree_services_grid_left">
 					<h3 class="w3l_header w3_agileits_header">Event Dataset with <span>Spiking Neural Network</span></h3>
-					<p style="text-align: justify;"> 
+					<p style="text-align: justify;" style="font-family: Arial, sans-serif; font-size: 16px; color: #333;"> 
 						Event-based vision and SNNs are emerging as transformative technologies for neuromorphic computing, which offers efficient and biologically inspired methods for processing dynamic and real-time data. 
 						Traditional frame-based methods struggle to match the temporal resolution and low-latency response offered by event-based sensors, such as Dynamic Vision Sensors (DVS) or DAVIS cameras, 
 						which capture changes in the scene at the pixel level. These sensors output asynchronous events rather than static frames, which opens new possibilities for high-speed and low-power applications. 
@@ -113,7 +115,7 @@
 							<!-- Text on the right -->
 							<div class="col-md-9 wthree_services_grid_left">
 								<h3>A Event <span>Dataset</span></h3>
-								<p style="text-align: justify;">
+								<p style="text-align: justify;" style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
 									Event-based cameras capture dynamic changes in a scene by recording pixel-level events triggered by motion, rather than traditional frame-based methods: <br>
 									1- Timestamp: High-precision time information for each event. <br>
 									2- Pixel Coordinates (x, y): Specifies the exact location of the pixel where the event occurred. <br>
@@ -135,7 +137,7 @@
 							<!-- Text on the right -->
 							<div class="col-md-9 wthree_services_grid_left">
 								<h3>A Spike Train <span>Dataset</span></h3>
-								<p style="text-align: justify;">
+								<p style="text-align: justify;" style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
 									Converting event-based datasets to spike trains is essential for SNNs. 
 									Spike trains align with SNNs time-based processing, while event-based data, being asynchronous, is difficult for spiking models to handle efficiently. <br>
 									Why conversion is important: <br>
@@ -148,7 +150,7 @@
 							<!-- GIF on the left -->
 							<div class="col-md-3 wthree_services_grid_right">
 								<br>
-								<img style="width: 95%;" src="videos/spike_event.gif" alt="Event GIF">
+								<img style="width: 95%;" src="videos/spike_event.gif" alt="Spike GIF">
 							</div>
 						</div>
 					</div>
@@ -158,11 +160,161 @@
 	</div>
 
 
+<br><br>
+<!-- Qualitative Results -->
+<section>
+	<div class="col-md-12 text-center">
+		<h3 class="w3l_header w3_agileits_header">Comparative<span> Results</span></h3>
+		  <hr style="margin-top:0px">
+		  <div style="display: inline-block; text-align: left;">
+			<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+			  <h6 class="w3l_header" style="font-size: 20px;"> Transforming Event-Based Data into Spike Train Datasets </h6>
+			</p>
+		  </div>
+		<div class="container">
+			<div class="row">
+				<section class="hand-crafted">
+					<div class="col-md-12 wthree_services_grid_left">
+						<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+							Transforming event-based datasets to spike trains is essential for SNNs modeling. 
+							Spike trains align with SNNs time-based processing, while event-based data, being asynchronous, is difficult for spiking models to handle efficiently.
+							Differences between event-based datasets and spike train datasets:
+							<div class="d-flex justify-content-center" >
+								<div class="col-lg-4 col-md-6 col-sm-12">
+									<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+										<b>Data Format:</b> <br>
+										Event-based datasets capture asynchronous changes in pixel brightness, <br>
+										while spike train datasets represent these changes as discrete spikes over time.<br> 
+									</p>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12 ">
+									<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+									  <b>Temporal Resolution:</b> <br>
+									  Event-based datasets provide high temporal resolution with continuous streams of events, <br>
+									  whereas spike trains aggregate these events into discrete spikes that align with neural activity.<br>
+									</p>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12 ">
+									<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+									  <b>Data Synchronization:</b> <br>
+									  Event-based data lacks inherent time alignment, which makes it difficult for time-dependent models. <br>
+									  Spike trains are inherently time-synchronized, facilitating more effective learning and inference in SNNs.<br>
+									</p>
+								</div>
+							</div>
+						</p>
+					</div>
+				</section>
+			</div>
+			<div class="d-flex justify-content-center ">
+				<div class="col-lg-4 col-md-6 col-sm-12 text-center">
+					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
+						<img style="width: 90%; height: 10cm" src="images/Event_drink.png" alt="Events" class="img-fluid">
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 text-center">
+					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
+						<br><br><br><br>
+						<img style="width: 90%;" src="images/Spikes2.png" alt="Spikes" class="img-fluid">
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 text-center">
+					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
+						<img style="width: 90%; height: 10cm" src="images/Spike_drink.png" alt="Spikes" class="img-fluid">
+					</p>
+				</div>
+			</div>
+			<br>
+			<div style="display: inline-block; text-align: left;">
+				<p style="color: #808080;">
+				  * On the left side: Event-Based Dataset - Class: Cup - Action: Drink. <br>
+				  * Center: Spiking Activity in Specific Region (x=50, y=50) - Class: Cup - Action: Drink. <br>
+				  * On the right side: Generative Spike Train Dataset - Class: Cup - Action: Drink. <br>
+				</p>
+			</div>
+		</div>
+		<br>
+		<br>
+	</div>
+</section>
 
 
-
-
-
+<!-- Qualitative Results -->
+<section>
+	<div class="col-md-12 text-center">
+		<h3 class="w3l_header w3_agileits_header">Comparative<span> Results</span></h3>
+		  <hr style="margin-top:0px">
+		  <div style="display: inline-block; text-align: left;">
+			<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+			  <h6 class="w3l_header" style="font-size: 20px;"> Transforming Event-Based Data into Spike Train Datasets </h6>
+			</p>
+		  </div>
+		<div class="container">
+			<div class="row">
+				<section class="hand-crafted">
+					<div class="col-md-12 wthree_services_grid_left">
+						<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+							Transforming event-based datasets to spike trains is essential for SNNs modeling. 
+							Spike trains align with SNNs time-based processing, while event-based data, being asynchronous, is difficult for spiking models to handle efficiently.
+							Differences between event-based datasets and spike train datasets:
+							<div class="d-flex justify-content-center" >
+								<div class="col-lg-4 col-md-6 col-sm-12">
+									<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+										<b>Data Format:</b> <br>
+										Event-based datasets capture asynchronous changes in pixel brightness, <br>
+										while spike train datasets represent these changes as discrete spikes over time.<br> 
+									</p>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12 ">
+									<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+									  <b>Temporal Resolution:</b> <br>
+									  Event-based datasets provide high temporal resolution with continuous streams of events, <br>
+									  whereas spike trains aggregate these events into discrete spikes that align with neural activity.<br>
+									</p>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12 ">
+									<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
+									  <b>Data Synchronization:</b> <br>
+									  Event-based data lacks inherent time alignment, which makes it difficult for time-dependent models. <br>
+									  Spike trains are inherently time-synchronized, facilitating more effective learning and inference in SNNs.<br>
+									</p>
+								</div>
+							</div>
+						</p>
+					</div>
+				</section>
+			</div>
+			<div class="d-flex justify-content-center ">
+				<div class="col-lg-4 col-md-6 col-sm-12 text-center">
+					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
+						<img style="width: 90%; height: 10cm" src="images/Event_drink.png" alt="Events" class="img-fluid">
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 text-center">
+					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
+						<br><br><br><br>
+						<img style="width: 90%;" src="images/Spikes2.png" alt="Spikes" class="img-fluid">
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 text-center">
+					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
+						<img style="width: 90%; height: 10cm" src="images/Spike_drink.png" alt="Spikes" class="img-fluid">
+					</p>
+				</div>
+			</div>
+			<br>
+			<div style="display: inline-block; text-align: left;">
+				<p style="color: #808080;">
+				  * On the left side: Event-Based Dataset - Class: Cup - Action: Drink. <br>
+				  * Center: Spiking Activity in Specific Region (x=50, y=50) - Class: Cup - Action: Drink. <br>
+				  * On the right side: Generative Spike Train Dataset - Class: Cup - Action: Drink. <br>
+				</p>
+			</div>
+		</div>
+		<br>
+		<br>
+	</div>
+</section>
 
 
 <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
