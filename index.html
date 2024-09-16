@@ -104,8 +104,6 @@
 					<h3 class="w3l_header w3_agileits_header">Event Dataset with <span>Spiking Neural Network</span></h3>
 					<p style="text-align: justify;" style="font-family: Arial, sans-serif; font-size: 16px; color: #333;"> 
 						Event-based vision and SNNs are emerging as transformative technologies for neuromorphic computing, which offers efficient and biologically inspired methods for processing dynamic and real-time data. 
-						Traditional frame-based methods struggle to match the temporal resolution and low-latency response offered by event-based sensors, such as Dynamic Vision Sensors (DVS) or DAVIS cameras, 
-						which capture changes in the scene at the pixel level. These sensors output asynchronous events rather than static frames, which opens new possibilities for high-speed and low-power applications. 
 						However, the use of these event-based datasets in SNNs requires specific data formats, namely spike trains, that mirror the spike-based communication found in biological neural networks.
 					</p>
 					<br>
@@ -225,11 +223,19 @@
 				</div>
 			</div>
 			<br>
+			<div class="d-flex justify-content-center align-items-end">
+				<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
+						<img style="width: 100%;" src="images/heat.png" alt="Heatmap" class="img-fluid">
+					</p>
+				</div>
+			</div>
 			<div style="display: inline-block; text-align: left;">
-				<p style="color: #808080;">
+				<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
 				  * On the left side: Event-Based Dataset - Class: Cup - Action: Drink. <br>
 				  * Center: Spiking Activity in Specific Region (x=50, y=50) - Class: Cup - Action: Drink. <br>
 				  * On the right side: Generative Spike Train Dataset - Class: Cup - Action: Drink. <br>
+				  * On the bottom - Figure E: presents binned heatmaps, where spike events are aggregated into spatial bins. <br>
 				</p>
 			</div>
 		</div>
@@ -242,11 +248,11 @@
 <!-- Qualitative Results -->
 <section>
 	<div class="col-md-12 text-center">
-		<h3 class="w3l_header w3_agileits_header">Comparative<span> Results</span></h3>
+		<h3 class="w3l_header w3_agileits_header">Reconstructs<span> Results</span></h3>
 		  <hr style="margin-top:0px">
 		  <div style="display: inline-block; text-align: left;">
 			<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
-			  <h6 class="w3l_header" style="font-size: 20px;"> Transforming Event-Based Data into Spike Train Datasets </h6>
+			  <h6 class="w3l_header" style="font-size: 20px;"> Converting Event/Spikes-based data into Frame-based Visualizations </h6>
 			</p>
 		  </div>
 		<div class="container">
@@ -254,32 +260,10 @@
 				<section class="hand-crafted">
 					<div class="col-md-12 wthree_services_grid_left">
 						<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
-							Transforming event-based datasets to spike trains is essential for SNNs modeling. 
-							Spike trains align with SNNs time-based processing, while event-based data, being asynchronous, is difficult for spiking models to handle efficiently.
-							Differences between event-based datasets and spike train datasets:
-							<div class="d-flex justify-content-center" >
-								<div class="col-lg-4 col-md-6 col-sm-12">
-									<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
-										<b>Data Format:</b> <br>
-										Event-based datasets capture asynchronous changes in pixel brightness, <br>
-										while spike train datasets represent these changes as discrete spikes over time.<br> 
-									</p>
-								</div>
-								<div class="col-lg-4 col-md-6 col-sm-12 ">
-									<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
-									  <b>Temporal Resolution:</b> <br>
-									  Event-based datasets provide high temporal resolution with continuous streams of events, <br>
-									  whereas spike trains aggregate these events into discrete spikes that align with neural activity.<br>
-									</p>
-								</div>
-								<div class="col-lg-4 col-md-6 col-sm-12 ">
-									<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
-									  <b>Data Synchronization:</b> <br>
-									  Event-based data lacks inherent time alignment, which makes it difficult for time-dependent models. <br>
-									  Spike trains are inherently time-synchronized, facilitating more effective learning and inference in SNNs.<br>
-									</p>
-								</div>
-							</div>
+							The raw event data from these event-based sensors are inherently sparse and asynchronous, which makes it difficult to directly interpret or utilize for standard image-based applications.
+							Therefore, the primary goal of reconstructing events into frame-based visualizations is to transform the sparse, asynchronous event data into a structured format that can be easily analyzed and visualized.
+							Secondly, the motivation behind visualizing the generated spike train dataset and comparing the visual differences between real (event-based) and generated (spike train) datasets.
+							For this reconstruction of events into a frame-based visualization framework, we used a trained neural network model, which is used for the reconstruction [1].
 						</p>
 					</div>
 				</section>
@@ -287,27 +271,29 @@
 			<div class="d-flex justify-content-center ">
 				<div class="col-lg-4 col-md-6 col-sm-12 text-center">
 					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-						<img style="width: 90%; height: 10cm" src="images/Event_drink.png" alt="Events" class="img-fluid">
+						<img style="width: 90%; height: 10cm" src="images/rawevent.png" alt="Events" class="img-fluid"> <br><br>
+						<img style="width: 90%; height: 10cm" src="images/raweventframe.png" alt="Events" class="img-fluid">
 					</p>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12 text-center">
 					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-						<br><br><br><br>
-						<img style="width: 90%;" src="images/Spikes2.png" alt="Spikes" class="img-fluid">
+						<img style="width: 90%;" src="images/all.JPG" alt="Spikes" class="img-fluid"> <br><br><br><br>
+						<img style="width: 90%;" src="images/total.png" alt="Spikes" class="img-fluid">
 					</p>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12 text-center">
-					<p " playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-						<img style="width: 90%; height: 10cm" src="images/Spike_drink.png" alt="Spikes" class="img-fluid">
+						<img style="width: 90%; height: 10cm" src="images/spikevent1.png" alt="Events" class="img-fluid"> <br><br>
+						<img style="width: 90%; height: 10cm" src="images/spikeframe1.png" alt="Events" class="img-fluid">
 					</p>
 				</div>
 			</div>
 			<br>
 			<div style="display: inline-block; text-align: left;">
 				<p style="color: #808080;">
-				  * On the left side: Event-Based Dataset - Class: Cup - Action: Drink. <br>
-				  * Center: Spiking Activity in Specific Region (x=50, y=50) - Class: Cup - Action: Drink. <br>
-				  * On the right side: Generative Spike Train Dataset - Class: Cup - Action: Drink. <br>
+				  * On the left side: Frame-based visualization of raw event data, showing the transformation of asynchronous events into structured images. <br>
+				  * Center-Top: Visualization of individual class actions in the generated spike train dataset, allowing users to select specific events for frame reconstruction. <br>
+				  * Center-Bottom: Visualization of the total number of spikes in the selected class action file. <br>
+				  * On the right side: Frame-based visualization of spike train data, illustrating the transformation of asynchronous events into structured images. <br>
 				</p>
 			</div>
 		</div>
